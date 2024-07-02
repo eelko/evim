@@ -21,10 +21,19 @@ return {
         },
         icons = {
           glyphs = {
-            folder = {
-              arrow_closed = "", -- arrow when folder is closed
-              arrow_open = "", -- arrow when folder is open
+            git = {
+              unstaged = "U",
+              staged = "S",
+              unmerged = "UM",
+              renamed = "R",
+              deleted = "D",
+              untracked = "",
+              ignored = "I",
             },
+            folder = {
+              arrow_closed = "", -- arrow when folder is closed
+              arrow_open = "", -- arrow when folder is open
+            }, 
           },
         },
       },
@@ -42,6 +51,7 @@ return {
         custom = { ".DS_Store" },
       },
       git = {
+        enable = true,
         ignore = false,
       },
     })
